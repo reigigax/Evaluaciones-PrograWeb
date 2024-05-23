@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Conexion a Hoja de Estilos -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Conexion a jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+        <!-- Conexion a Hoja de JavaScript -->
+        <script type="text/JavaScript" src="js/funciones.js"></script>
+
+        <!-- Conexion a Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <!-- Link de Iconos -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Imagen de la Pestana -->
+        <link rel="icon" href="img/Inicio/PatIcon.ico">
+        
+        <!-- Titulo de la Pestana -->
+        <title>Tienda Peludita</title>
+    </head>
+    <body>
+        <!-- NavBar -->
+        <div>
+            <nav class="navbar fixed-top navbar-expand-lg degradado-nav row">
+                <div class="container-fluid">
+                    <!-- NavBar - Tienda Peludita -->
+                    <a class="navbar-brand" href="#">
+                        <img src="img/Inicio/PatIconNav.webp" alt="TP-Icon" class="degradado-circulo mrg-l-sides" type="image/webp">
+                        <span class="text-18 text-grey-home mrg-l-side">TIENDA PELUDITA</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse container-fluid text-center" id="navbarNavDropdown">
+                        <div class="mrg-nav-side">
+                            <ul class="navbar-nav">
+                                <!-- NavBar - Inicio -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="" id="nav-inicio">
+                                        <span class="text-grey"> 
+                                            <i class="fi fi-sr-home"></i>
+                                            Inicio
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- NavBar - Tienda -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" id="nav-tienda">
+                                        <span class="text-grey">
+                                            <i class="fi fi-sr-shopping-cart"></i>
+                                            Tienda
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- NavBar - Donaciones -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" id="nav-donaciones">
+                                        <span class="text-grey">
+                                            <i class="fi fi-sr-piggy-bank"></i>
+                                            Donaciones
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- NavBar - Nosotros -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" id="nav-nosotros">
+                                        <span class="text-grey">
+                                            <i class="fi fi-sr-users-alt"></i>
+                                            Nosotros
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- NavBar - Contacto -->
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" id="nav-contacto">
+                                        <span class="text-grey">
+                                            <i class="fi fi-sr-comments"></i>
+                                            Contacto
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Div donde se cargara el contenido de las demas paginas -->
+        <div id="contenido">
+        
+            <!-- Carrousel -->
+            <div id="carouselExample" class="carousel slide mrg-top sombra sombra-carrousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img src="img/Inicio/Bienvenida.webp" class="d-block w-100 img-fluid" alt="Bienvenida" type="image/webp">
+                        </a>
+                    </div>
+                    <div class="carousel-item active">
+                        <a href="nosotros-tienda/tienda.html"> 
+                            <img src="img/Inicio/Ofertas-Tienda.webp" class="d-block w-100 img-fluid" alt="Tienda" type="image/webp">
+                        </a>
+                    </div>
+                    <div class="carousel-item active">
+                        <a href="nosotros-tienda/tienda.html">
+                            <img src="img/Inicio/Promocion-Tienda.webp" class="d-block w-100 img-fluid" alt="Tienda" type="image/webp">
+                        </a>
+                    </div>
+                    <div class="carousel-item active">
+                        <a href="donaciones/donaciones.html">
+                            <img src="img/Inicio/Donaciones.webp" class="d-block w-100 img-fluid" alt="Donaciones" type="image/webp">
+                        </a>
+                    </div>
+                    <div class="carousel-item active">
+                        <a href="nosotros-tienda/nosotros.html">
+                            <img src="img/Inicio/Quienes-Somos.webp" class="d-block w-100 img-fluid" alt="Nosotros" type="image/webp">
+                        </a>
+                    </div>
+                    <div class="carousel-item active">
+                        <a href="contacto/contacto.html">
+                            <img src="img/Inicio/Contactos.webp" class="d-block w-100 img-fluid" alt="Contacto" type="image/webp">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            
+            <!-- Texto/Slogan Promocional -->
+            <br>
+            <div class="container-fluid text-center deg-txt pad-txt sombra-carrousel">
+                <h1 class="txt-font">¡¡ Haz que cada día sea una aventura para tu mejor amigo peludo con nuestros productos de calidad !! </h1>
+            </div>
+            <br>
+
+            <!--Tarjetas de accesos a paginas-->
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+
+                    <!-- Seccion de Perros -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="nosotros-tienda/tienda.html">
+                                <img src="img/Inicio/Seccion-Perros.webp" class="card-img-top" alt="Seccion de Perros">
+                            </a>
+                            <div class="card-body cat-card-backcolor">
+                                <h5 class="card-title txt-font">
+                                    <i class="fi fi-sr-bone"></i>
+                                        OFERTAS PERRUNAS
+                                    <i class="fi fi-sr-bone"></i>
+                                </h5>
+                                <p class="card-text">Haz que la cola de tu perro no deje de moverse con nuestros productos de alta calidad y comodidad</p>
+                                
+                                <!-- Boton de Acceso a la Seccion -->
+                                <a href="nosotros-tienda/tienda.html">
+                                    <button class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text txt-font">Ir a la sección</span>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seccion de Gatos -->
+                    <div class="col">
+                        <div class="card">
+                            <a href="nosotros-tienda/tienda.html">
+                                <img src="img/Inicio/Seccion-Gatos.webp" class="card-img-top" alt="Seccion de Gatos">
+                            </a>
+                            <div class="card-body dog-card-backcolor">
+                                <h5 class="card-title txt-font">
+                                    <i class="fi fi-ss-cat-head"></i>
+                                        OFERTAS GATUNAS
+                                    <i class="fi fi-ss-cat-head"></i>
+                                </h5>
+                                <p class="card-text">Explora una colección de productos que harán que tu minino se sienta mimado y cuidado</p>
+                                
+                                <!-- Boton de Acceso a la Seccion -->
+                                <a href="nosotros-tienda/tienda.html">
+                                    <button class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                            <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text txt-font">Ir a la Sección</span>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Seccion Otros -->
+                <div class="card mb-3">
+                    <a href="nosotros-tienda/tienda.html">
+                        <img src="img/Inicio/Seccion-Otros.webp" class="card-img-top" alt="Seccion Otros">
+                    </a>
+                    <div class="card-body card-backcolor">
+                        <h5 class="card-title txt-font"></h5>
+                        <p class="card-text">Descubre una selección única de productos para tus amigos exóticos, porque todas las mascotas merecen ser mimadas</p>
+                        
+                        <!-- Boton de Acceso a la Seccion -->
+                        <a href="nosotros-tienda/tienda.html">
+                            <button class="learn-more">
+                                <span class="circle" aria-hidden="true">
+                                    <span class="icon arrow"></span>
+                                </span>
+                                <span class="button-text txt-font">Ir a la Sección</span>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mrg-sides-hr">
+                <hr class="sty-hr">
+            </div>
+
+            <!-- Funcionalidades / Sloganes -->
+            <div class="txt-font mrg-sides">
+                <!-- Carrito de compra -->
+                <h2>Catálogo de Productos</h2>
+                <p>Nuestra amplia selección de productos incluye alimentos, juguetes, accesorios, productos de cuidado, ropa y más para diferentes tipos de mascotas</p>
+                <br>
+                
+                <!-- Carrito de compra -->
+                <h2>Información Detallada de los Productos</h2>
+                <p>Presentamos descripciones completas de productos que incluyan características, materiales, tamaños, instrucciones de uso, opiniones de clientes, y cualquier otra información relevante que ayude a los clientes a tomar decisiones informadas de compra</p>
+                <br>
+
+                <!-- Carrito de compra -->
+                <h2>Imágenes de alta calidad</h2>
+                <p>Fotografías claras y detalladas de los productos desde diferentes ángulos para que los clientes puedan verlos con claridad y tener una idea precisa de cómo son antes de comprarlos</p>
+                <br>
+                
+                <!-- Carrito de compra -->
+                <h2>Proceso de compra sencillo</h2>
+                <p>Un proceso de compra intuitivo y fácil de seguir, con opciones de pago seguras y variadas</p>
+                <br>
+                
+                <!-- Carrito de compra -->
+                <h2>Carrito de compra</h2>
+                <p>Funcionalidad que permite a los usuarios agregar productos a su carrito de compra y revisar fácilmente lo que han seleccionado antes de proceder al pago</p>
+                <br>
+            </div>
+
+            <div class="mrg-sides-hr">
+                <hr class="sty-hr">
+            </div>
+
+            <!-- Ofertas al Email -->
+            <div class="card mb-3 mrg-sides sombra-carrousel">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="img/Inicio/Formulario-Inicio.webp" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-6 deg-txt">
+                        <form class="row g-3 needs-validation" novalidate>
+                            <div class="col mrg-sides form-mx-width">
+                                <h2 class="txt-font mrg-form">¿Quieres Unirte a la Comunidad Peludita?</h2>
+                                <p>
+                                    ¡No te pierdas nuestras increíbles ofertas y promociones exclusivas! ¿Deseas recibir correos electrónicos con nuestras últimas novedades y descuentos? Suscríbete ahora para mantenerte al día y consentir a tu mascota con lo mejor
+                                </p>
+                                <label for="validationCustomUsername" class="txt-font">Correo</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend"><i class="fi fi-sr-envelope"></i></span>
+                                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Ingresa un Correo Valido
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <a href="contacto/contacto.html">
+                                    <button class="btn card-backcolor mrg-sides" type="submit">¡Unete!</button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Footer -->
+            <footer>
+                    <div class="footerContainer">
+                        <div class="socialIcons">
+                        <a href="https://m.facebook.com/login/?locale=es_LA&refsrc=deprecated"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    <div class="footerNav txt-font">
+                        <ul><li><a href="index.html">Home</a></li>
+                            </ul>
+                        </div>
+                                
+                    </div>
+                            <div class="footerBottom">
+                            <p>Copyright &copy;2024; Designed by The Cary Team<span class="designer"></span></p>
+                        </div>
+                </footer>
+            </footer>
+
+        </div>
+
+    </body>
+</html>
