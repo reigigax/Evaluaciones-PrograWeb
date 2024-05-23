@@ -1,0 +1,352 @@
+/*NAVBAR*/
+/* Conexion a Flaticon - Iconos */
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.cdnfonts.com/css/more-sugar');
+                
+.cart-empty {
+    font-family: 'More Sugar', sans-serif;
+}
+
+/*Estilo para todos los elementos de la página*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para la pagina entera */
+body {
+    background-color: hsl(170, 44%, 87%);
+}
+
+.deg-txt {
+    background: linear-gradient(to right, #af8bbfa4, #aad5ff9c);
+}
+
+/* Estilo de texto*/
+.text-18 {
+    font-size: 18px;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.text-grey {
+    color: rgb(50, 50, 50);
+    font-family: 'More Sugar', sans-serif;
+}
+
+.text-grey-home {
+    color: rgb(50, 50, 50);
+    font-weight: 650;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.mrg-nav-side {
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+
+.mrg-sides {
+    margin-left: 10%;
+}
+
+.mrg-top-donaciones {
+    margin-top: 20%;
+}
+
+.mrg-top {
+    margin-top: 6.3%;
+}
+
+
+/* Estilos de Imagenes */
+.degradado-circulo {
+    background: radial-gradient(rgba(0, 0, 0) 58%, #ffffff00, #ffffff00 50%);
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Estilos de Nav Bar */
+.nav-col {
+    background-color: #a4b3d4;
+}
+
+.degradado-nav {
+    background: #F8C592;
+}
+
+
+/* Estilo para las etiquetas "<li>" dentro de las etiquetas "<ul>" */
+ul li {
+    list-style: none;
+}
+
+
+/* Estilo para las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #c0e3f7;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+/* Estilo para ANTES de realizar una accion en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-top: 2px solid #ffe0c1;
+    border-bottom: 2px solid #ffe0c1;
+    transform: scaleY(2);
+    opacity: 0; transition: 0.3s;
+}
+
+
+/* Estilo para DESPUES de realizar una accion en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:after {
+    content: "";
+    position: absolute;
+    top: 1px; left: 0;
+    width: 100%; height: 100%;
+    background-color: #ffe0c1;
+    transform:  scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+
+/* Estilo para cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover {
+    color: #012822;
+}
+
+
+/* Estilo para ANTES cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+/* Estilo para DESPUES cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+
+body {
+    
+    font-family: 'More Sugar', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/Donaciones/fondo.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+form {
+    padding: 1px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 500px;
+    background-color: #F9F5EC; /* Cambio de color a morado */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2 {
+    color: #283629;
+    font-size: 35px;
+}
+
+label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #a4b3d4bd;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none;
+}
+
+/* Color de las letras de adentro de los casilleros */
+input::placeholder,
+textarea::placeholder {
+    color: #020202;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: #6178ac;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #6178ac;
+    box-shadow: 0 0 20px #F9F5EC(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #6178ac;
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+
+    input {
+        padding: 15px;
+    }
+}
+
+.tarjeta {
+    font-family: 'More Sugar', sans-serif;
+}
+
+/* Estilo Footer */
+footer{
+    background-color:#F8C592;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+    grid-template-columns:none;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+.socialIcons a:hover{
+    background-color: #363b76;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #34353d;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}

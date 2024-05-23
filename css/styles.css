@@ -1,0 +1,417 @@
+/* Conexion a Flaticon - Iconos */
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.cdnfonts.com/css/more-sugar');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css');
+                
+
+/*Estilo para todos los elementos de la página*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para la pagina entera */
+body {
+    background-image: url('../img/Inicio/BackGround.webp'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+
+/* Estilos de Fondo */
+.deg-txt {
+    background: linear-gradient(to right, #af8bbfa4, #aad5ff9c);
+}
+
+.dog-card-backcolor {
+    background-color: #ffe0c194;
+}
+
+.cat-card-backcolor {
+    background-color: #aad5ff96;
+}
+
+.card-backcolor {
+    background: linear-gradient(70deg, #ffe0c194, #aad5ff96);
+}
+
+.sombra-carrousel {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px -20px;
+}
+
+.sombra-cards {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+/* Estilo de texto */
+.txt-font, p {
+    font-family: 'More Sugar', sans-serif;
+}
+
+.text-18 {
+    font-size: 18px;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.txt-just {
+    text-align: justify;
+}
+
+.text-grey {
+    color: rgb(50, 50, 50);
+    font-family: 'More Sugar', sans-serif;
+}
+
+.text-grey-home {
+    color: rgb(50, 50, 50);
+    font-weight: 650;
+    font-family: 'More Sugar', sans-serif;
+}
+
+
+/* Estilo Formulario */
+.form-mx-width {
+    max-width: 80%;
+    margin-top: auto;
+}
+
+.mrg-form {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* Tipos de Margen */
+.mrg-nav-side {
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+
+.mrg-sides-hr {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.mrg-l-sides {
+    margin-left: 10%;
+}
+
+.mrg-sides {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.mrg-top {
+    margin-top: 6.3%;
+}
+
+
+
+/* Tipos de Padding */
+.pad-txt {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* Estilo hr */
+.sty-hr {
+    border: 5px solid #323232;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+}
+
+
+/* Estilos de Imagenes */
+.degradado-circulo {
+    background: radial-gradient(rgba(0, 0, 0) 58%, #ffffff00, #ffffff00 50%);
+}
+
+
+/* Estilos de Nav Bar */
+.nav-col {
+    background-color: #a4b3d4;
+}
+
+.degradado-nav {
+    background: #F8C592;
+}
+
+
+/* Estilo para las etiquetas "<ul>" */
+.ul-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+
+/* Estilo para las etiquetas "<li>" dentro de las etiquetas "<ul>" */
+ul li {
+    list-style: none;
+}
+
+
+/* Estilo para las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #c0e3f7;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+/* Estilo para ANTES de realizar una accion en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-top: 2px solid #ffe0c1;
+    border-bottom: 2px solid #ffe0c1;
+    transform: scaleY(2);
+    opacity: 0; transition: 0.3s;
+}
+
+
+/* Estilo para DESPUES de realizar una accion en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:after {
+    content: "";
+    position: absolute;
+    top: 1px; left: 0;
+    width: 100%; height: 100%;
+    background-color: #ffe0c1;
+    transform:  scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+
+/* Estilo para cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover {
+    color: #012822;
+}
+
+
+/* Estilo para ANTES cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+/* Estilo para DESPUES cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+
+/* Estilos de Boton */
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+   
+button.learn-more {
+    width: 15rem;
+    height: auto;
+}
+   
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+   
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+   
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+   
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+   
+button:hover .circle {
+    width: 100%;
+}
+   
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+button:hover .button-text {
+    color: #fff;
+}
+
+
+/* Estilo Footer */
+footer{
+    background-color:#F8C592;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+    grid-template-columns:none;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+.socialIcons a:hover{
+    background-color: #363b76;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #34353d;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
