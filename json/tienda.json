@@ -18,14 +18,14 @@
         {"Id":3,
         "Titulo":"Jugete",
         "Precio":1500,
-        "Descripcion":"Jugete perfecto para los perros que aman los jugetes de forma de hueso, pero a la vez necesitan un jugete de goma seguro y resistente",
+        "Descripcion":"Jugete perfecto para los perros que aman los jugetes de forma de hueso, pero a la vez necesitan un jugete de goma seguro y resistente.",
         "Img":"../img/Tienda/hperro.png"
         },
 
         {"Id":4,
         "Titulo":"Cama",
         "Precio":10000,
-        "Descripcion":"Cama rectangular para perros está perfectamente fabricada con materiales de primera calidad, te aseguran muchas horas de sueño para tu peludo",
+        "Descripcion":"Cama rectangular para perros está perfectamente fabricada con materiales de primera calidad, te aseguran muchas horas de sueño para tu peludo.",
         "Img":"../img/Tienda/cmperro.png"
         },
 
