@@ -9,11 +9,11 @@ $(document).ready(function () {
 
     idSeccionHtml = idSeccion + indice;
 
-    $.each(data.Productos, function (data, registro) {
+    $.each(data.Productos, function (index, registro) {
       console.log(registro);
 
       $(idSeccionHtml).append(
-        '<div class="item"><figure><img src="' +
+        '<div class="item"><figure><img class="product-img" data-index="' + index + '" src="' +
           registro.Img +
           '" alt="producto"/></figure><div class="info-product"><h2>' +
           registro.Titulo +
@@ -29,8 +29,33 @@ $(document).ready(function () {
 
       console.log(idSeccionHtml);
     });
+
+    // Modal 
+    var modal = $('#productModal');
+    var modalDescription = $('#modalDescription');
+    var span = $('.close');
+
+    $('.product-img').click(function () {
+      var product = data.Productos[$(this).data('index')];
+      modalDescription.text(product.Descripcion); // Mostrar solo la descripción
+
+      modal.show();
+    });
+
+    span.click(function () {
+      modal.hide();
+    });
+
+    $(window).click(function (event) {
+      if (event.target.id === 'productModal') {
+        modal.hide();
+      }
+    });
   });
 });
+
+
+
 
 const btnCart = document.querySelector(".container-cart-icon");
 const containerCartProducts = document.querySelector(
