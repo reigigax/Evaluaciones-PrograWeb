@@ -1,77 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donaciones</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donaciones</title>
 
-    <!-- Conexion a Hoja de Estilos -->
-    <link rel="stylesheet" href="../css/donaciones-style.css">
+        <!-- Conexion a Hoja de Estilos -->
+        <link rel="stylesheet" href="../css/donaciones-style.css">
 
-    <!-- Conexion a jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- Conexion a jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type="text/JavaScript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.20.0/dist/jquery.validate.min.js"></script>
         
-    <!-- Conexion a Hoja de JavaScript -->
-    <script type="text/JavaScript" src="../js/funciones-donaciones.js"></script>
+        <!-- Conexion a Hoja de JavaScript -->
+        <script type="text/JavaScript" src="../js/funciones-donaciones.js"></script>
 
-    <!-- Conexion a Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- Link de Iconos -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" href="images/pata.ico"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/more-sugar">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Conexion a Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-</head>
-<body>
-<div>
+        <link rel="icon" href="images/pata.ico"><link rel="stylesheet" href="https://fonts.cdnfonts.com/css/more-sugar">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+    </head>
+    <body>
+        <div class="container mrg-top">
+            <img class="img-thumbnail img-fluid d-block w-100" src="../img/Donaciones/Donaciones-Top.jpg" alt="Donaciones Header">
+            <div class="container mrg-top">
+                <form class="row needs-validation" novalidate>
+                    <div class="col-12 titulo-form-mrg-bott">
+                        <h1 class="txt-font text-center titulo-fondo img-thumbnail">AYUDANOS A HACER DEL MUNDO UN LUGAR MEJOR PARA NUESTROS AMIGOS PELUDOS</h1>
+                    </div>
+                    <div class="col-6 form-mrg-bott">
+                        <label for="nombreInput" class="form-label txt-font">Nombre Completo <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control txt-font" id="nombreInput" placeholder="Escribe tu Nombre" required>
+                        <div class="invalid-feedback txt-font">
+                            Debe rellenar este campo
+                        </div>
+                    </div>
 
-    <div class="container-fluid mrg-top-donaciones">
-        <form action="https://formsubmit.co/carina.t.aravena@gmail.com" method="POST">
-            <h2>Donaciones</h2>
-            <div class="input-group">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" placeholder="Nombre">
-        
-                <label for="phone">Teléfono</label>
-                <input type="tel" name="phone" id="phone" placeholder="Teléfono">
-        
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
-        
-                <label for="donation_amount">Monto de la Donación</label>
-                <div class="input-group">
-                    <input type="number" name="donation_amount" id="donation_amount" placeholder="Monto">
-                    <select name="currency" id="currency">
-                        <option value="CLP">CLP - Pesos Chilenos</option>
-                        <option value="USD">USD - Dólares Americanos</option>
-                    </select>
-                </div>
+                    <div class="col-6 form-mrg-bott">
+                        <label for="correoInput" class="form-label txt-font">Correo <span style="color: red;">*</span></label>
+                        <input type="email" class="form-control txt-font" id="correoInput" placeholder="Escribe tu Correo" required>
+                        <div class="invalid-feedback txt-font">
+                            El correo debe presentar el siguiente formato
+                            Ej: email@gmail.com
+                        </div>
+                    </div>
+                    
+                    <div class="col-4 form-mrg-bott">
+                        <label for="donacionInput" class="form-label txt-font">Cantidad de Donacion <span style="color: red;">*</span></label>
+                        <input type="number" class="form-control txt-font" id="donacionInput" placeholder="Ingresa la Cantidad a Donar" required>
+                        <div class="invalid-feedback txt-font">
+                            La cantidad ingresada debe ser desde los $1000
+                        </div>
+                    </div>
 
-                <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="30" placeholder="Mensaje"></textarea>
-        
-        
-                <div class="form-txt">
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Términos y condiciones</a>
-                </div>
-        
-                <input class="btn" type="submit" value="Enviar">
+                    <div class="col-4 form-mrg-bott">
+                        <label for="pagoInput" class="form-label txt-font">Medio de Pago <span style="color: red;">*</span></label>
+                        <select class="form-select form-control txt-font" id="pagoInput" required>
+                          <option selected disabled value="">Selecciona un Medio de Pago</option>
+                          <option>Credito</option>
+                          <option>Debito</option>
+                        </select>
+                        <div class="invalid-feedback txt-font">
+                            Debe seleccionar un Medio de Pago
+                        </div>
+                    </div>
+
+                    <div class="col-4 form-mrg-bott">
+                        <label for="numberInput" class="form-label txt-font">Teléfono <span style="color: rgb(90, 90, 90);">(Opcional)</span></label>
+                        <input type="number" class="form-control txt-font" id="numberInput" placeholder="Ingresa tu Telefono">
+                    </div>
+
+                    <div class="col-12 form-mrg-bott">
+                        <label for="direccionInput" class="form-label txt-font">Dirección <span style="color: red;">*</span></label>
+                        <input type="text" class="form-control txt-font" id="direccionInput" placeholder="Escribe tu Dirección" required>
+                        <div class="invalid-feedback txt-font">
+                            Debe rellenar este campo
+                        </div>
+                    </div>
+
+                    <div class="col-12 form-mrg-bott">
+                        <div class="form-check">
+                            <input type="checkbox" id="checkTerminos" class="form-check-input" required>
+                            <label for="checkTerminos" class="form-check-label txt-font">Acepto lo términos y Condiciones</label>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 col-6 mx-auto col-12 txt-font mrg-top">
+                        <button type="submit" class="btn btn-primary txt-font deg-txt">Donar</button>
+                    </div>
+
+                </form>
             </div>
             
-        </form>
-    </div>
-    <div class="container d-flex justify-content-between">
-        <div class="tarjeta" style="width: 18rem;">
-            <div class="card-body" id="fundacion-display"></div>
+            <!-- Texto/Slogan Promocional -->
+            <h1 class="txt-font text-center mrg-top titulo-fondo img-thumbnail">ORGANIAZCIONES SIN FINES DE LUCRO</h1>
+            <div class="container mrg-top">
+                <h3 class="txt-font text-center">Las organizaciones sin fines de lucro dedicadas a las mascotas trabajan incansablemente para proteger y mejorar la vida de los animales. A través de rescates, cuidados médicos, y programas de adopción, estas entidades se comprometen a proporcionar un hogar amoroso y seguro para cada mascota, fomentando una comunidad donde los animales y las personas puedan prosperar juntos </h3>
+            </div>
+            <br><br>
+            <div class="container-fluid">
+                <!-- Fundaciones e Organizaciones sin fines de lucro -->
+                <div class="row row-cols-1 row-cols-md-2 g-4" id="fundacion-display"></div>
+            </div>
         </div>
-    </div>    
-</body>
+        <footer>
+            <div class="footerContainer mrg-top">
+                <div class="socialIcons">
+                <a href="https://m.facebook.com/login/?locale=es_LA&refsrc=deprecated"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="footerNav txt-font">
+                    <ul><li><a href="../index.html">Home</a></li></ul>
+                </div>        
+            </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2024; Designed by The Cary Team<span class="designer"></span></p>
+                </div>
+        </footer>
+        <!-- script para la validacion del formulario -->
+        <script>
+            (() => {
+                'use strict'
+            
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.needs-validation')
+            
+                // Loop over them and prevent submission
+                Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+            
+                    form.classList.add('was-validated')
+                }, false)
+                })
+            })()
+        </script>
+    </body>
 </html>
